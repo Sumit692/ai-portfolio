@@ -8,14 +8,15 @@ function Projects() {
 
       <div style={styles.grid}>
         {projects.map((p, i) => (
-          <motion.div
-            key={i}
-            style={styles.card}
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 0 40px rgba(124,58,237,0.6)",
-            }}
-          >
+  <motion.div
+    key={i}
+    style={styles.card}
+    whileHover={{
+      y: -10,
+      scale: 1.05,
+      boxShadow: "0 0 40px rgba(124,58,237,0.6)",
+    }}
+  >
             <h3 style={styles.projectTitle}>{p.title}</h3>
 
             <p style={styles.desc}>{p.desc}</p>
@@ -97,15 +98,15 @@ const styles = {
   },
 
   card: {
-    width: "300px",
-    padding: "25px",
-    borderRadius: "20px",
-    backdropFilter: "blur(15px)",
-    background: "rgba(255,255,255,0.05)",
-    border: "1px solid rgba(255,255,255,0.1)",
-    textAlign: "left",
-    transition: "0.3s",
-  },
+  width: "300px",
+  padding: "25px",
+  borderRadius: "20px",
+  backdropFilter: "blur(15px)",
+  background: "rgba(255,255,255,0.05)",
+  border: "1px solid rgba(255,255,255,0.1)",
+  textAlign: "left",
+  transition: "0.3s",
+},
 
   projectTitle: {
     marginBottom: "10px",

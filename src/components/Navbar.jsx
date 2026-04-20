@@ -12,6 +12,7 @@ function Navbar() {
         <a href="#about" onClick={() => setActive("about")}>About</a>
         <a href="#projects" onClick={() => setActive("projects")}>Projects</a>
         <a href="#skills" onClick={() => setActive("skills")}>Skills</a>
+        <a href="#experience" onClick={() => setActive("experience")}>Experience</a>
         <a href="#contact" onClick={() => setActive("contact")}>Contact</a>
       </div>
     </div>

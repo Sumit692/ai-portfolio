@@ -57,3 +57,10 @@ body::after {
   right: -100px;
   z-index: -1;
 }
+
+/* 🔥 Better layout spacing */
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 20px;
+}

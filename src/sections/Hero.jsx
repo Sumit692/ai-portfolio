@@ -1,4 +1,6 @@
+import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import profile from "../assets/profile.jpg";
 
 function Hero() {
   return (
@@ -9,20 +11,31 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
+        {/* 🔥 Profile Image */}
+        <img src={profile} style={styles.image} alt="profile" />
+
         <h1 style={styles.name}>Sumit Kumar Singh</h1>
 
         <h2 style={styles.tagline}>
-          AI Developer × Athlete
+          Building AI systems. Training like an athlete. Winning both.
         </h2>
 
-        <motion.p
-          style={styles.desc}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-        >
-          Building intelligent systems. Performing like an athlete.
-        </motion.p>
+        {/* ✅ FIXED TYPING TEXT */}
+        <p style={styles.desc}>
+          <Typewriter
+            words={[
+              "Building intelligent systems.",
+              "Training like an athlete.",
+              "Solving real-world problems with AI.",
+            ]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={50}
+            deleteSpeed={30}
+            delaySpeed={1500}
+          />
+        </p>
 
         <div style={styles.buttons}>
           <button
@@ -62,14 +75,23 @@ const styles = {
     backdropFilter: "blur(20px)",
     background: "rgba(255,255,255,0.05)",
     border: "1px solid rgba(255,255,255,0.1)",
-    padding: "50px",
+    padding: "60px 50px",
     borderRadius: "20px",
     textAlign: "center",
     boxShadow: "0 0 40px rgba(0,255,255,0.1)",
   },
 
+  image: {
+    width: "120px",
+    height: "120px",
+    borderRadius: "50%",
+    objectFit: "cover",
+    marginBottom: "20px",
+    border: "2px solid #7c3aed",
+  },
+
   name: {
-    fontSize: "3rem",
+    fontSize: "2.5rem",
     fontWeight: "bold",
     background: "linear-gradient(90deg, #00f5ff, #7c3aed)",
     WebkitBackgroundClip: "text",
@@ -84,6 +106,8 @@ const styles = {
   desc: {
     marginTop: "15px",
     color: "#94a3b8",
+    fontSize: "1.05rem",
+    lineHeight: "1.6",
   },
 
   buttons: {
