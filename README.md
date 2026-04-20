@@ -1,20 +1,91 @@
-<<<<<<< HEAD
-# React + Vite
+🚀 AI Portfolio – Sumit Kumar Singh
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-end, futuristic portfolio website showcasing my work as an AI Developer, Software Engineer, and Athlete.
 
-Currently, two official plugins are available:
+Built with a focus on performance, clean UI, and modern web experience, combining technology with a disciplined mindset.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 Live Demo
 
-## React Compiler
+👉 https://ai-portfolio-ruby.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚡ Features
+🎯 Modern Hero Section with typing animation
+🧠 AI + Developer Branding (tech + athlete mindset)
+📦 Project Showcase with Popup Modal
+🔗 GitHub Integration for each project
+📊 Stats Section (quick highlights)
+🏆 Experience & Achievements Section
+🎨 Glassmorphism UI + Neon Gradients
+📱 Responsive Design
+⚡ Smooth animations using Framer Motion
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+Frontend: React (Vite)
+Styling: CSS (Glassmorphism + Gradients)
+Animations: Framer Motion
+Deployment: Vercel
+Version Control: Git & GitHub
+📂 Project Structure
+src/
+ ├── components/
+ │    └── Navbar.jsx
+ ├── sections/
+ │    ├── Hero.jsx
+ │    ├── About.jsx
+ │    ├── Projects.jsx
+ │    ├── Skills.jsx
+ │    ├── Experience.jsx
+ │    ├── Stats.jsx
+ │    └── Contact.jsx
+ ├── assets/
+ │    ├── profile.jpg
+ │    └── ai.png
+ ├── App.jsx
+ └── main.jsx
+🧠 Key Projects
+🔹 LUMI – AI Teacher Chatbot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# ai-portfolio
->>>>>>> b2ad1bb607fe6ef971dee509146c70caa5b0501f
+Multi-subject AI chatbot with voice input, memory, and Gemini API integration.
+
+🔹 VAANI – AI Text Assist
+
+AI-powered accessibility tool using OCR, NLP, and Text-to-Speech.
+
+🔹 Full Stack ToDo App
+
+Task manager with authentication using JSP, Servlet, and MySQL.
+
+🔹 Tic-Tac-Toe Pro
+
+Interactive game with AI opponent (Minimax), animations, and responsive UI.
+
+🏆 Experience & Achievements
+💼 Web Development Intern – SkillCraft Technology
+🥇 VTU Football Champion (Central Zone)
+🧠 1st Prize – Theory of Computation Expo
+📜 Certifications in DevOps, DSA, Software Engineering
+🚀 Getting Started
+
+Clone the repository:
+
+git clone https://github.com/Sumit692/ai-portfolio.git
+cd ai-portfolio
+npm install
+npm run dev
+📦 Deployment
+
+Deployed on Vercel
+
+npm run build
+💡 Future Improvements
+Add blog section
+Integrate AI chatbot in portfolio
+Add project live demos
+Improve animations and transitions
+📬 Contact
+📧 Email: sumitkumarsingh7502@gmail.com
+🔗 LinkedIn: https://linkedin.com/in/sumitkumarsingh24
+💻 GitHub: https://github.com/Sumit692
+⭐ If you like this project
+
+Give it a star ⭐ — it motivates me to build more!
