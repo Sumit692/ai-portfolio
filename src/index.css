@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020617;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Buttons */
+button:hover {
+  box-shadow: 0 0 15px #7c3aed;
+}
+
+/* Links */
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #00f5ff;
+}
+
+/* Fix navbar overlap */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Background glow */
+body::before {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(124,58,237,0.2), transparent);
+  top: -100px;
+  left: -100px;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,245,255,0.15), transparent);
+  bottom: -100px;
+  right: -100px;
+  z-index: -1;
+}
