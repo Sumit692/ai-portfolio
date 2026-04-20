@@ -1,62 +1,74 @@
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import profile from "../assets/profile.jpg";
+import ai from "../assets/ai.png";
 
 function Hero() {
   return (
     <section id="home" style={styles.hero}>
-      <motion.div
-        style={styles.card}
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        {/* 🔥 Profile Image */}
-        <img src={profile} style={styles.image} alt="profile" />
+      <div style={styles.container}>
 
-        <h1 style={styles.name}>Sumit Kumar Singh</h1>
+        {/* LEFT SIDE */}
+        <motion.div
+          style={styles.card}
+          initial={{ opacity: 0, x: -60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <img src={profile} style={styles.image} alt="profile" />
 
-        <h2 style={styles.tagline}>
-          Building AI systems. Training like an athlete. Winning both.
-        </h2>
+          <h1 style={styles.name}>Sumit Kumar Singh</h1>
 
-        {/* ✅ FIXED TYPING TEXT */}
-        <p style={styles.desc}>
-          <Typewriter
-            words={[
-              "Building intelligent systems.",
-              "Training like an athlete.",
-              "Solving real-world problems with AI.",
-            ]}
-            loop={true}
-            cursor
-            cursorStyle="|"
-            typeSpeed={50}
-            deleteSpeed={30}
-            delaySpeed={1500}
-          />
-        </p>
+          <h2 style={styles.tagline}>
+            Building AI systems. Training like an athlete. Winning both.
+          </h2>
 
-        <div style={styles.buttons}>
-          <button
-            style={styles.primary}
-            onClick={() =>
-              document.getElementById("projects").scrollIntoView()
-            }
-          >
-            View Projects
-          </button>
+          <p style={styles.desc}>
+            <Typewriter
+              words={[
+                "Building intelligent systems.",
+                "Training like an athlete.",
+                "Solving real-world problems with AI.",
+              ]}
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={50}
+              deleteSpeed={30}
+              delaySpeed={1500}
+            />
+          </p>
 
-          <button
-            style={styles.secondary}
-            onClick={() =>
-              document.getElementById("contact").scrollIntoView()
-            }
-          >
-            Contact
-          </button>
-        </div>
-      </motion.div>
+          <div style={styles.buttons}>
+            <button
+              style={styles.primary}
+              onClick={() =>
+                document.getElementById("projects").scrollIntoView()
+              }
+            >
+              View Projects
+            </button>
+
+            <button
+              style={styles.secondary}
+              onClick={() =>
+                document.getElementById("contact").scrollIntoView()
+              }
+            >
+              Contact
+            </button>
+          </div>
+        </motion.div>
+
+        {/* RIGHT SIDE AI IMAGE */}
+        <motion.img
+          src={ai}
+          alt="ai"
+          style={styles.aiImage}
+          animate={{ y: [0, -20, 0] }}
+          transition={{ repeat: Infinity, duration: 4 }}
+        />
+      </div>
     </section>
   );
 }
@@ -67,32 +79,37 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background:
-      "radial-gradient(circle at top, #0f172a, #020617)",
+    background: "radial-gradient(circle at top, #0f172a, #020617)",
+  },
+
+  container: {
+    display: "flex",
+    alignItems: "center",
+    gap: "60px",
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
 
   card: {
     backdropFilter: "blur(20px)",
     background: "rgba(255,255,255,0.05)",
     border: "1px solid rgba(255,255,255,0.1)",
-    padding: "60px 50px",
+    padding: "50px",
     borderRadius: "20px",
     textAlign: "center",
     boxShadow: "0 0 40px rgba(0,255,255,0.1)",
+    maxWidth: "400px",
   },
 
   image: {
-    width: "120px",
-    height: "120px",
+    width: "100px",
+    height: "100px",
     borderRadius: "50%",
-    objectFit: "cover",
     marginBottom: "20px",
-    border: "2px solid #7c3aed",
   },
 
   name: {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
+    fontSize: "2rem",
     background: "linear-gradient(90deg, #00f5ff, #7c3aed)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -106,31 +123,33 @@ const styles = {
   desc: {
     marginTop: "15px",
     color: "#94a3b8",
-    fontSize: "1.05rem",
-    lineHeight: "1.6",
   },
 
   buttons: {
-    marginTop: "25px",
+    marginTop: "20px",
   },
 
   primary: {
-    padding: "12px 24px",
+    padding: "10px 20px",
     marginRight: "10px",
     borderRadius: "10px",
     border: "none",
     background: "linear-gradient(90deg, #00f5ff, #7c3aed)",
     cursor: "pointer",
-    fontWeight: "bold",
   },
 
   secondary: {
-    padding: "12px 24px",
+    padding: "10px 20px",
     borderRadius: "10px",
     border: "1px solid #7c3aed",
     background: "transparent",
     color: "#7c3aed",
     cursor: "pointer",
+  },
+
+  aiImage: {
+    width: "350px",
+    filter: "drop-shadow(0 0 20px #00f5ff)",
   },
 };
 
