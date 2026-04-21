@@ -20,7 +20,12 @@ function Experience() {
     {
       title: "Certifications & Technical Growth",
       duration: "2024 – 2025",
-      desc: "Completed certifications in DevOps, Software Engineering, DSA (Java), and Programming in C, strengthening core technical foundation.",
+      desc: "Completed certifications in DevOps, Software Engineering, and Programming in C, strengthening core technical foundation.",
+    },
+    {
+      title: "NPTEL Course",
+      duration: "2025",
+      desc: "Completed NPTEL course on Data Structures and Algorithms using JAVA, enhancing problem-solving skills and algorithmic thinking.",
     },
   ];
 
