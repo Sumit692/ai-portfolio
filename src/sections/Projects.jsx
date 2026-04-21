@@ -61,18 +61,6 @@ const projects = [
     tech: "HTML • CSS • JS",
     github: "https://github.com/Sumit692/SCT_WD_1",
   },
-  {
-    title: "Scientific Calculator",
-    desc: "Advanced calculator with scientific functions and history.",
-    tech: "HTML • CSS • JS",
-    github: "https://github.com/Sumit692/SCT_WD_2",
-  },
-  {
-    title: "Tic-Tac-Toe Pro",
-    desc: "Interactive game with AI opponent, animations, profiles, and responsive UI.",
-    tech: "HTML • CSS • JavaScript • Minimax AI",
-    github: "https://github.com/Sumit692/SCT_WD_3",
-  }
 ];
 
 const styles = {
