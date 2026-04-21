@@ -56,6 +56,12 @@ const projects = [
     github: "https://github.com/Sumit692/Simple-TODO-Application",
   },
   {
+    title: "Covid19-Testing-Management-System",
+    desc: "Web app for managing COVID-19 testing data with user roles.",
+    tech: "HTML • CSS • PHP • MySQL",
+    github: "https://github.com/Sumit692/Covid19-Testing-Management-System",
+  },
+  {
     title: "Neon Navigation UI",
     desc: "Futuristic nav with animations and responsive design.",
     tech: "HTML • CSS • JS",
