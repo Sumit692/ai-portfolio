@@ -20,7 +20,7 @@ function Experience() {
     {
       title: "Certifications & Technical Growth",
       duration: "2024 – 2025",
-      desc: "Completed certifications in DevOps, Software Engineering, and Programming in C, strengthening core technical foundation.",
+      desc: "Completed certifications in DevOps, Software Engineering, Agile Methodology, AWS, JavaScript, and Programming in C, strengthening core technical foundation.",
     },
     {
       title: "NPTEL Course",
