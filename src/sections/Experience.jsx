@@ -4,7 +4,7 @@ function Experience() {
   const items = [
     {
       title: "Web Development Intern – SkillCraft Technology",
-      duration: "Sep 2025 – Dec 2025",
+      duration: "Oct 2025 – Dec 2025",
       desc: "Worked on real-world web development projects, applying strong problem-solving skills and delivering high-quality solutions under professional guidance.",
     },
     {
