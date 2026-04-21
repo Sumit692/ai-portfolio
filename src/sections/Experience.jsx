@@ -9,7 +9,7 @@ function Experience() {
     },
     {
       title: "VTU Football Champion",
-      duration: "2024 – 2025",
+      duration: "2024 – 2025, 2025 – 2026",
       desc: "Led and contributed to team success in VTU Central Zone tournaments, demonstrating discipline, teamwork, and high performance under pressure.",
     },
     {
