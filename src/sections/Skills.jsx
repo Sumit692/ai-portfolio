@@ -4,8 +4,11 @@ function Skills() {
   const skills = [
     { title: "Programming", items: ["Java", "Python", "SQL"] },
     { title: "Web", items: ["HTML", "CSS", "JavaScript", "React"] },
-    { title: "Backend", items: ["Node.js","MySQL", "REST APIs"] },
+    { title: "Backend", items: ["Node.js", "MySQL", "REST APIs"] },
     { title: "Core", items: ["DSA", "OOP", "Problem Solving"] },
+
+    // 🔥 NEW SECTION ADDED
+    { title: "Tools", items: ["Git", "GitHub", "VS Code"] },
   ];
 
   return (
