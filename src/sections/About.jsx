@@ -12,7 +12,7 @@ function About() {
         <h2 style={styles.title}>About Me</h2>
 
         <p style={styles.text}>
-          I am a Computer Science student focused on building AI-driven solutions 
+          I am an Information Science student focused on building AI-driven solutions 
           that solve real-world problems. I enjoy working with intelligent systems, 
           web technologies, and scalable backend architectures.
         </p>
